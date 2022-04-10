@@ -1,0 +1,147 @@
+Intro Part of project:
+*Twitter Search & Sentiment Analysis Using
+API* where Implementation of search and sentiment
+analysis using Tweepy & TextBlob module. Further, 
+Functions like API, OAuthHandler and
+etc are used for the ease of code and better
+analysis.
+
+Explanation of the project:
+This project is based on searching and sentiment
+ analysis using API of the twitter platform.. 
+so starting with your twitter account. on twitter , 
+there's a seprate Developer's Portal where 
+a user can register for the private tokens 
+and consumer keys. These keys helps to connect the 
+twitter application from the programming 
+language through an interface which makes 
+the complete 
+sense of how API (application programming 
+interface) works. These keys & tokens can also be 
+regenrated as per the further requirement.
+Moving towards the coding part, Pyhton Modules
+ are used in the code. I've used:
+Tweepy 
+TextBlob
+
+Tweepy is a Python package that gives you a 
+very convenient way to access the Twitter API 
+with Python. 
+This package consist of various methods
+ which has been used in my code. 
+*tweepy.OAuthHandler is one of the tweepy's method
+ which is used to check the authority of the user.
+In other words, we use OAuthHandler to authenticate 
+whether the provided tokens & keys are correct or not.
+This helps us to set access token in the further steps.
+*tweepy.API is a method of the API class in 
+Tweepy module used to fetch a status / tweet. 
+Extraction of live tweets from the user's 
+twitter account is carried out using tweepy API.
+We give stored value of the authentication 
+as an input(first_auth jo variable tm as an
+ input di ho) in tweepy.
+API nd store the whole result in a seprate 
+variable (storage_api_connect variable that u 
+have used in ur code).
+
+On applying the basics of python and the required 
+logic.. I somehow able to develope this code. 
+Taking input from the users regarding the word 
+user want to search on twitter and the no. 
+of tweets that user wants are taken. Further
+ a loop is executed through which we will obtain a 
+whole new live data of the twitter in a scripted
+ form. also we will apply the proper filters such as lang: 
+eng , result_type:'recent' and etc which will make
+ the searching process effective & fast.
+*Iterating through the scripted data(JSON response),
+it helps to make pagination easier and require less 
+code Tweepy has the cursor object tweepy.cursor 
+which i've used in my code. (pagination ka mtlb hua ki jo 
+JSON Response milega.. utna bada response mai jo 
+filters tm apply kiye ho.. tmko direct wahi pe le jaye..
+ignoring the rest of the code.. isse searching fast hoga.)
+
+As a result, we get the live tweets data which i've 
+converted into a formal text using .text method.
+(yaha tak mai live tweets fetch hogya..)
+
+(Now for the sentiment..)
+Using the same process and logic, i've implemented
+the sentiment analysis. The sentiment functn of textblob 
+consists of two properties.. Polarity and Subjectivity.
+Polarity is float which lies in the range of [-1,1] 
+where 1 means positive statement and -1 means a 
+negative statement.
+Subjectivity is also a float which lies in the
+Range of [0,1]. In my code, i've used Polarity for
+The better understanding. 
+On framing all the piece of code in a proper manner, 
+i had successfully extracted the twitter live tweets 
+and its sentiments(ploarity).
+
+What is an API?
+An API (Application Programming Interface) 
+is a software that allows two applications to
+Communicate with each other.
+(tere case mai twitter aur python communicate kiya hai)
+
+What is API testing?
+API testing is a type of software testing that
+Determines if the developed APIs are functional, 
+reliable and secure.
+(tm jo keys ko authenticate kiye.. wahi hai)
+
+API Testing ya phr srf API.. why we use it?
+There can be multiple reasons for performing 
+API testing:
+*Input condition-based return values.
+*Call to another API
+*if any other event is triggered
+*Modification of some resources like an update 
+of the database
+(koi bhi 2 3 dekh lena..)
+
+What are some tools used for API testing?
+A few popular tools are 
+SoapUi Pro
+Postman
+Apigee
+Curl. SoapUi’s interface is quick and easy to use.
+
+What is REST API?
+Representational State Transfer, is a set of functions 
+that help developers perform requests and receive responses.
+
+What is the difference between SOAP and REST?
+SOAP is a protocol through which two computers can
+Communicate by sharing XML, while REST is a service designed 
+for network-based software architecture.
+
+What is input injection?
+Input injection refers to the simulation of user input.
+
+now very important thing.. if ye sb k alawa bhi kch 
+Puchta h toh.. API ya pyhton ya project kahi bhi.. then
+
+Since the topic API is a vast topic, i've not
+Covered it completely. I'm still learning and exploring more 
+effective ways to carry out other diff. projects. 
+My work is still under process.
+
+project se agr kch bhot alter puch deta h toh..
+Python lang is easy yet very vast. It consist of 
+thousands of libraries. it might be possible to implement 
+the same project in a more effecient way. I'm trying 
+my best to figure it out and focusing on further 
+possibilites of my project.
+
+incase aur bhi kahi fass jao then.. ya kahi kch 
+bhul jao toh aise bolna..
+i'm missing the exact keyword.. i've not 
+covered all the pros & cons of this topic.. 
+its a vast topic & i'm still learning.. 
+yahi sb bhol dena cover krne k liye..
+kosis krna ki "no sir i don't know about 
+this thing" bhot kam bolna pade..
